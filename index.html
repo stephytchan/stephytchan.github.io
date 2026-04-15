@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <html><head>
-<meta name="description" content="Stephanie Chan, UCL">
+<meta name="description" content="Stephanie Chan, UCL Mathematics">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
 <title>Stephanie Chan</title>
 <style type="text/css">
 body {font-family: verdana; font-size: 80%; line-height: 1.5; color: #000000; padding: 1em; margin:auto; max-width: 1080px} 
+footer {font-size: 80%; text-align: right}
 li {margin: .5em 0; padding-left: .5em}
 dd {font-size: 95%; margin-left: 1em}
 </style>
@@ -18,7 +19,7 @@ dd {font-size: 95%; margin-left: 1em}
 <address>Department of Mathematics, University College London, Gower Street, London, WC1E 6BT, United Kingdom
 <br>Email: stephanie.chan[at]ucl.ac.uk</address>
 </span>
-<p>I am a lecturer in mathematics at UCL. </p> <p> My research area is number theory, in particular arithmetic statistics.</p>
+<p>I am a lecturer in pure mathematics at UCL. </p> <p> My research area is number theory, in particular arithmetic statistics.</p>
 <details>
   <summary>Previous affiliations</summary>
   <p><dl>
@@ -33,12 +34,17 @@ I completed my PhD at UCL in August 2020 under the supervision of Andrew Granvil
 <dt>My research profiles:
 [<a href="https://arxiv.org/a/chan_s_2.html" target="_blank">arXiv</a>] 
 [<a href="https://orcid.org/0000-0001-8467-4106" target="_blank">ORCID</a>]
-[<a href="https://scholar.google.com/citations?user=Ni0PFv0AAAAJ" target="_blank">Google Scholar</a>]</dt>
+[<a href="https://scholar.google.com/citations?user=Ni0PFv0AAAAJ" target="_blank">Google Scholar</a>]
+[<a href="https://profiles.ucl.ac.uk/58188-stephanie-chan" target="_blank">UCL</a>]
+</dt>
 </dl>
 
 <section>
 <h3>Publications and preprints</h3>
 <ol reversed>
+<li>
+Thin sets in weighted projective stacks (with Daniel Loughran, Nick Rome), submitted. <a href="https://arxiv.org/abs/2602.05705" target="_blank">[arXiv:2602.05705]</a>
+</li>
 <li>
 Selmer groups of families of elliptic curves with an ℓ-isogeny (with Matteo Verzobio), submitted. <a href="https://arxiv.org/abs/2508.21406" target="_blank">[arXiv:2508.21406]</a>
 </li>
@@ -106,5 +112,19 @@ PhD Thesis: <a href="https://discovery.ucl.ac.uk/id/eprint/10107372/" target="_b
 MMath Dissertation: <a href="chan_dissertation.pdf" target="_blank" rel="nofollow">Topics in the theory of zeta functions of curves</a>, 2016. </li>
 </ul>
 </section>
+</body>
+<footer>
+   <p>Last modified: <span id="lastModified"></span></p>
 
-</body></html>
+<script>
+  const d = new Date(document.lastModified);
+
+  const formatted = d.toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric'
+  });
+
+  document.getElementById("lastModified").textContent = formatted;
+</script>
+</footer></html>
