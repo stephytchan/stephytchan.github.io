@@ -60,11 +60,12 @@
       text-decoration-thickness: 1px;
     }
 
-    a:hover { text-decoration-thickness: 2px; }
-
-    ol a[href^="https://doi.org/"] {
-      color: var(--paper-link);
+    a:hover,
+    #theme-toggle:hover {
+      text-decoration-thickness: 2px;
     }
+
+    ol a[href^="https://doi.org/"] { color: var(--paper-link); }
 
     a:focus-visible,
     button:focus-visible,
@@ -73,20 +74,23 @@
       outline-offset: 3px;
     }
 
-    header { margin-bottom: 0.9rem; }
+    header {
+      --portrait-width: clamp(66px, 40vw, 264px);
+      --portrait-gap: clamp(0.8rem, 2.5vw, 1.35rem);
+      margin-bottom: 0.9rem;
+    }
 
     .header-copy {
-      margin-right: 209px;
+      margin-right: calc(var(--portrait-width) + var(--portrait-gap));
       padding-bottom: 0.9rem;
       border-bottom: 1px solid var(--border);
     }
 
     .portrait {
       float: right;
-      width: 185px;
-      max-width: 40%;
+      width: var(--portrait-width);
       height: auto;
-      margin: 0 0 0.9rem 1.35rem;
+      margin: 0 0 0.9rem var(--portrait-gap);
       border-radius: 2px;
     }
 
@@ -188,21 +192,8 @@
       cursor: pointer;
     }
 
-    #theme-toggle:hover { text-decoration-thickness: 2px; }
-
     @media (max-width: 600px) {
       body { padding: 1rem 0.9rem; }
-      .header-copy { margin-right: 149px; }
-      .portrait { width: 125px; margin-left: 1rem; }
-    }
-
-    @media (max-width: 420px) {
-      .header-copy { margin-right: 122px; }
-      .portrait {
-        width: 105px;
-        max-width: 38%;
-        margin-left: 0.85rem;
-      }
     }
 
     @media print {
@@ -280,20 +271,16 @@
           <a href="https://doi.org/10.4171/jems/1704" target="_blank" rel="noopener noreferrer">Almost all quadratic twists of an elliptic curve have no integral points</a> (with Tim Browning), <em>J. Eur. Math. Soc. (JEMS)</em>, to appear. <a href="https://arxiv.org/abs/2401.04375" target="_blank" rel="noopener noreferrer">[arXiv:2401.04375]</a>
         </li>
         <li>
-          <a href="https://doi.org/10.1093/imrn/rnad266" target="_blank" rel="noopener noreferrer">The 3-isogeny Selmer groups of the elliptic curves y²=x³+n²</a>, <em>Int. Math. Res. Not. IMRN</em> (2024), no. 9, 7571&#8288;&#8211;&#8288;7593.
-          <a href="https://arxiv.org/abs/2211.06062" target="_blank" rel="noopener noreferrer">[arXiv:2211.06062]</a>
+          <a href="https://doi.org/10.1093/imrn/rnad266" target="_blank" rel="noopener noreferrer">The 3-isogeny Selmer groups of the elliptic curves y²=x³+n²</a>, <em>Int. Math. Res. Not. IMRN</em> (2024), no. 9, 7571&#8288;&#8211;&#8288;7593. <a href="https://arxiv.org/abs/2211.06062" target="_blank" rel="noopener noreferrer">[arXiv:2211.06062]</a>
         </li>
         <li>
-          <a href="https://doi.org/10.1007/s00208-023-02578-x" target="_blank" rel="noopener noreferrer">Integral points on cubic twists of Mordell curves</a>, <em>Math. Ann.</em> 388 (2024), 2275&#8288;&#8211;&#8288;2288.
-          <a href="https://arxiv.org/abs/2203.11366" target="_blank" rel="noopener noreferrer">[arXiv:2203.11366]</a>
+          <a href="https://doi.org/10.1007/s00208-023-02578-x" target="_blank" rel="noopener noreferrer">Integral points on cubic twists of Mordell curves</a>, <em>Math. Ann.</em> 388 (2024), 2275&#8288;&#8211;&#8288;2288. <a href="https://arxiv.org/abs/2203.11366" target="_blank" rel="noopener noreferrer">[arXiv:2203.11366]</a>
         </li>
         <li>
-          <a href="https://doi.org/10.1016/j.aim.2024.109946" target="_blank" rel="noopener noreferrer">The average number of integral points on the congruent number curves</a>, <em>Adv. Math.</em> 457 (2024), Paper No. 109946.
-          <a href="https://arxiv.org/abs/2112.01615" target="_blank" rel="noopener noreferrer">[arXiv:2112.01615]</a>
+          <a href="https://doi.org/10.1016/j.aim.2024.109946" target="_blank" rel="noopener noreferrer">The average number of integral points on the congruent number curves</a>, <em>Adv. Math.</em> 457 (2024), Paper No. 109946. <a href="https://arxiv.org/abs/2112.01615" target="_blank" rel="noopener noreferrer">[arXiv:2112.01615]</a>
         </li>
         <li>
-          <a href="https://doi.org/10.1007/s40993-021-00295-5" target="_blank" rel="noopener noreferrer">A density of ramified primes</a> (with Christine McMeekin, Djordjo Milovic), <em>Res. Number Theory</em> 8 (2022), no. 1, Paper No. 1.
-          <a href="https://arxiv.org/abs/2005.10188" target="_blank" rel="noopener noreferrer">[arXiv:2005.10188]</a>
+          <a href="https://doi.org/10.1007/s40993-021-00295-5" target="_blank" rel="noopener noreferrer">A density of ramified primes</a> (with Christine McMeekin, Djordjo Milovic), <em>Res. Number Theory</em> 8 (2022), no. 1, Paper No. 1. <a href="https://arxiv.org/abs/2005.10188" target="_blank" rel="noopener noreferrer">[arXiv:2005.10188]</a>
         </li>
         <li>
           <a href="https://doi.org/10.1090/tran/8732" target="_blank" rel="noopener noreferrer">Integral points on the congruent number curve</a>, <em>Trans. Amer. Math. Soc.</em> 375 (2022), no. 9, 6675&#8288;&#8211;&#8288;6700. <a href="https://arxiv.org/abs/2004.03331" target="_blank" rel="noopener noreferrer">[arXiv:2004.03331]</a>
@@ -330,32 +317,34 @@
   <script>
     const root = document.documentElement;
     const toggle = document.getElementById('theme-toggle');
-    const systemDark = matchMedia('(prefers-color-scheme: dark)');
+    const prefersDark = matchMedia('(prefers-color-scheme: dark)');
 
-    document.getElementById('lastModified').textContent = new Date(
-      document.lastModified
-    ).toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'short',
-      year: 'numeric'
-    });
+    document.getElementById('lastModified').textContent =
+      new Date(document.lastModified).toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      });
 
-    function isDark() {
-      return root.dataset.theme
-        ? root.dataset.theme === 'dark'
-        : systemDark.matches;
+    function currentTheme() {
+      return root.dataset.theme || (prefersDark.matches ? 'dark' : 'light');
     }
 
     function updateToggle() {
-      toggle.textContent = isDark() ? 'Light mode' : 'Dark mode';
+      toggle.textContent =
+        currentTheme() === 'dark' ? 'Light mode' : 'Dark mode';
     }
 
     toggle.addEventListener('click', () => {
-      root.dataset.theme = isDark() ? 'light' : 'dark';
+      root.dataset.theme =
+        currentTheme() === 'dark' ? 'light' : 'dark';
       updateToggle();
     });
 
-    systemDark.addEventListener('change', updateToggle);
+    prefersDark.addEventListener('change', () => {
+      if (!root.dataset.theme) updateToggle();
+    });
+
     updateToggle();
   </script>
 </body>
